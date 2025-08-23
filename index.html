@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+
+    <!-- tailwind and daisy css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="h-[100vh] w-full flex flex-col justify-center items-center">
+    <main class="">
+      <div class="w-[300px] h-[130px] bg-cover bg-[url(./img/bg.png)] flex justify-center items-center">
+      <img src="img/Group.png" alt="">
+      </div>
+      
+
+      <!-- form section -->
+      <form class="">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label font-bold text-black">Mobile Number</label>
+              <input type="number" class="input rounded-3xl" placeholder="Enter your number" />
+              <label class="label font-bold text-black">4 Digit Pin</label>
+              <input type="password" class="input rounded-3xl " placeholder="Enter 4 Digit Pin" />
+              <button class="btn bg-[#0874f2] text-white mt-4 rounded-3xl">Login</button>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
