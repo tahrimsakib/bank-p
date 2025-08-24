@@ -15,10 +15,11 @@
   </head>
   <body class="h-[100vh] w-full flex flex-col justify-center items-center">
     <main class="">
-      <div class="w-[300px] h-[130px] bg-cover bg-[url(./img/bg.png)] flex justify-center items-center">
-      <img src="img/Group.png" alt="">
+      <div
+        class="w-[300px] h-[130px] bg-cover bg-[url(./img/bg.png)] flex justify-center items-center"
+      >
+        <img src="img/Group.png" alt="" />
       </div>
-      
 
       <!-- form section -->
       <form class="">
@@ -26,14 +27,31 @@
           <div class="card-body">
             <fieldset class="fieldset">
               <label class="label font-bold text-black">Mobile Number</label>
-              <input type="number" class="input rounded-3xl" placeholder="Enter your number" />
+              <input
+                id="login-num"
+                type="number"
+                class="input rounded-3xl"
+                placeholder="Enter your number"
+              />
               <label class="label font-bold text-black">4 Digit Pin</label>
-              <input type="password" class="input rounded-3xl " placeholder="Enter 4 Digit Pin" />
-              <button class="btn bg-[#0874f2] text-white mt-4 rounded-3xl">Login</button>
+              <input
+                id="login-pin"
+                type="password"
+                class="input rounded-3xl"
+                placeholder="Enter 4 Digit Pin"
+              />
+              <button
+                id="login-button"
+                class="btn bg-[#0874f2] text-white mt-4 rounded-3xl"
+              >
+                Login
+              </button>
             </fieldset>
           </div>
         </div>
       </form>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
