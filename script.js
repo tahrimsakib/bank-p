@@ -8,7 +8,7 @@ document.getElementById("login-button").addEventListener("click", function (e) {
   const pinCheck = parseInt(document.getElementById("login-pin").value);
 
   if (numCheck === num && pinCheck === pin) {
-    window.location.href = "./home.html";
+    window.location.href = "home.html";
   } else {
     alert("Please give us right number and pin");
   }

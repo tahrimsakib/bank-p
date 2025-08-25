@@ -17,14 +17,16 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class=" max-w-[450px] mx-auto flex flex-col items-center bg-[#f4f5f7]">
-    <header class="flex justify-between px-3 items-center w-[450px] mb-6">
-      <div class="flex items-center ">
+  <body class="max-w-[450px] mx-auto flex flex-col items-center bg-[#f4f5f7]">
+    <header
+      class="flex justify-between px-3 items-center w-[450px] mb-6 bg-white"
+    >
+      <div class="flex items-center">
         <figure class="w-16">
           <img src="img/Group.png" alt="" />
         </figure>
         <div class="">
-          <h1 class="font-bold">$<span>45000</span></h1>
+          <h1 class="font-bold">$<span id="currentAmount">45000</span></h1>
           <p>Available Balance</p>
         </div>
       </div>
@@ -38,7 +40,7 @@
     </header>
     <main class="w-[450px] px-3">
       <!-- caption item -->
-      <div class="mb-5 ">
+      <div class="mb-5">
         <h1 class="font-bold">🔥 Welcome to Payooo!</h1>
         <p class="text-[#08080880]">
           Enjoy easy and convenient financial services with us. Cashout charge
@@ -101,13 +103,13 @@
       </section>
       <!-- card item end  -->
 
-
       <!-- add money form start -->
-      <section class="w-[450px] ">
+      <section hidden class="w-[450px]">
         <h2 class="mb-4">Add Money</h2>
 
+        <!-- Add money form section start here -->
         <fieldset
-          class="w-[430px] fieldset bg-base-200 border-base-300 rounded-box border p-6"
+          class="w-[430px] fieldset bg-base-200 border-base-300 rounded-box border p-6 bg-white"
         >
           <label class="label">Select bank</label>
 
@@ -119,12 +121,14 @@
           </select>
           <label class="label">Bank Account Number</label>
           <input
+            id="bank-account-num"
             type="number"
             class="input w-full"
             placeholder="Enter 11 digit account number"
           />
           <label class="label">Amount to Add</label>
           <input
+            id="add-money"
             type="number"
             class="input w-full"
             placeholder="Add Amount to withdraw"
@@ -132,6 +136,7 @@
 
           <label class="label">Pin Number</label>
           <input
+            id="account-pin"
             type="password"
             class="input w-full"
             placeholder="Enter 4 digit pin number"
@@ -144,12 +149,53 @@
             Add Money
           </button>
         </fieldset>
+        <!-- Add money form section end here -->
       </section>
-
       <!-- add money form end -->
+
+      <!-- Cash Out section start  -->
+      <section class="w-[450px] mt-14">
+        <h2 class="mb-4">Cash out</h2>
+
+        <!-- cash out form section start here -->
+        <fieldset
+          class="w-[430px] fieldset bg-base-200 border-base-300 rounded-box border p-6 bg-white"
+        >
+          <label class="label">Agent Number</label>
+          <input
+            id="Agent-Number"
+            type="number"
+            class="input w-full"
+            placeholder="Enter 11 digit number"
+          />
+          <label class="label">Amount</label>
+          <input
+            id="amount"
+            type="number"
+            class="input w-full"
+            placeholder="Add Amount to withdraw"
+          />
+
+          <label class="label">Pin Number</label>
+          <input
+            id="account-pin"
+            type="password"
+            class="input w-full"
+            placeholder="Enter 4 digit pin number"
+          />
+          <button
+            id="cash-out-btn"
+            type="button"
+            class="btn bg-[#0874f2] text-white mt-4 rounded-3xl"
+          >
+            Add Money
+          </button>
+        </fieldset>
+        <!-- Cash out form section end here -->
+      </section>
+      <!-- Cash Out section end  -->
     </main>
 
-
-    <script src="home.js"></script>
+    <script src="./home.js"></script>
   </body>
 </html>
