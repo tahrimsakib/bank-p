@@ -52,3 +52,13 @@ document.getElementById("cash-out-btn").addEventListener("click", function (e) {
   const minus = currentAmount - amountValue;
   document.getElementById("currentAmount").innerText = minus;
 });
+
+document.getElementById('add-money-show').addEventListener('click', function(){
+  document.getElementById('add-money-from').style.display ='block'
+  document.getElementById('cashout-from').style.display ='none'
+})
+
+document.getElementById('cashout-show').addEventListener('click',function(){
+   document.getElementById('add-money-from').style.display ='none'
+  document.getElementById('cashout-from').style.display ='block'
+})
